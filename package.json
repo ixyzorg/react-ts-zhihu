@@ -12,11 +12,13 @@
   "dependencies": {
     "@ixyz/style-reset": "^2.0.0",
     "amfe-flexible": "^2.2.1",
+    "antd-mobile": "^5.37.1",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "postcss-pxtorem": "^6.1.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

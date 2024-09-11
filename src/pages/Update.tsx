@@ -1,0 +1,8 @@
+const Update: React.FC = () => {
+  return (
+    <div>
+      <h1>Update</h1>
+    </div>
+  )
+}
+export default Update

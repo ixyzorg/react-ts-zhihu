@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import App from '@/App'
 import 'amfe-flexible'
 
+import { ConfigProvider } from 'antd-mobile'
+import zhCN from 'antd-mobile/es/locales/zh-CN'
+
 /* 处理最大宽度 */
 ;(function () {
   const handleMaxWidth = () => {
@@ -17,4 +20,8 @@ import 'amfe-flexible'
 })()
 
 const root = createRoot(document.getElementById('root')!)
-root.render(<App />)
+root.render(
+  <ConfigProvider locale={zhCN}>
+    <App />
+  </ConfigProvider>
+)

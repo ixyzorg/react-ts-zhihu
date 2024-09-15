@@ -26,3 +26,11 @@ body {
     --size: 64px;
   }
 }
+//toast提示样式
+.adm-toast-mask .adm-toast-main{
+  top: 30% !important;
+  width: 150px !important;
+  .adm-auto-center-content{
+    text-align: center;
+  }
+}

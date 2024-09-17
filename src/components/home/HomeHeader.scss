@@ -1,0 +1,41 @@
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  .info {
+    display: flex;
+    align-items: center;
+    .time {
+      height: 70px;
+      padding-right: 25px;
+      span {
+        display: block;
+        text-align: center;
+        line-height: 35px;
+        font-size: 24px;
+        &:nth-child(1) {
+          font-size: 32px;
+        }
+      }
+    }
+    .title {
+      height: 65px;
+      padding-left: 25px;
+      line-height: 65px;
+      border-left: 2px solid #eee;
+      font-size: 40px;
+      font-weight: 900;
+    }
+  }
+  .avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

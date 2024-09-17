@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-
+import { type INewsLastest } from '@/types/news'
 enum BASE_API {
   NewsLatest = '/news_latest',
   NewsPre = '/news_before',
@@ -8,7 +8,6 @@ enum BASE_API {
   Login = '/login',
   PhoneCode = '/phone_code',
 }
-
 enum Auth_API {
   CheckLogin = '/check_login',
   UserInfo = '/user_info',
@@ -17,8 +16,8 @@ enum Auth_API {
   RemoveStore = '/store_remove',
   StoreList = '/store_list',
 }
-
-export const getNewsLatestService = () => request.get(BASE_API.NewsLatest)
+export const getNewsLatestService = () =>
+  request.get<INewsLastest>(BASE_API.NewsLatest)
 export const getNewsPreService = (date: string | null) =>
   request.get(BASE_API.NewsPre, { params: { date } })
 export const getNewsInfoService = (id: string) =>

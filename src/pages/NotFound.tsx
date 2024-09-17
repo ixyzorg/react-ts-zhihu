@@ -1,8 +1,6 @@
+import './NotFound.scss'
+import { ErrorBlock } from 'antd-mobile'
 const NotFound: React.FC = () => {
-  return (
-    <div>
-      <h1>404</h1>
-    </div>
-  )
+  return <ErrorBlock status="empty" />
 }
 export default NotFound

@@ -19,6 +19,12 @@ import zhCN from 'antd-mobile/es/locales/zh-CN'
   window.addEventListener('resize', handleMaxWidth)
 })()
 
+if (window.location.hash === '') {
+  const { origin, pathname, search } = window.location
+  const newHash = `#${pathname}${search}`
+  window.location.replace(`${origin}/${newHash}`)
+}
+
 const root = createRoot(document.getElementById('root')!)
 root.render(
   <ConfigProvider locale={zhCN}>

@@ -52,4 +52,24 @@
       }
     }
   }
+  .news-item-container {
+    padding: 10px 30px;
+    .adm-divider-horizontal{
+      margin: 8px 0;
+    }
+    .adm-divider-left.adm-divider-horizontal::before {
+      max-width: 2%;
+    }
+    .adm-divider-content{
+      padding: 0 8px;
+    }
+  }
+  .loading-more {
+    background-color: #eee;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+    height: 80px;
+    line-height: 80px;
+  }
 }

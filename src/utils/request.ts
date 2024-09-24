@@ -14,7 +14,6 @@ instance.interceptors.request.use(
     // 对请求错误做些什么
     Toast.show({
       content: '网络异常,请稍后再试',
-      duration: 2,
       icon:'fail'
     })
     return Promise.reject(error)
@@ -51,7 +50,6 @@ instance.interceptors.response.use(
     }
     Toast.show({
       content: message,
-      duration: 2,
       icon:'fail'
     })
     return Promise.reject(error)

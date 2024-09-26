@@ -4,7 +4,7 @@ enum BASE_API {
   NewsLatest = '/news_latest',
   NewsPre = '/news_before',
   NewsInfo = '/news_info',
-  StoreExtra = '/store_extra',
+  StoreExtra = '/story_extra',
   Login = '/login',
   PhoneCode = '/phone_code',
 }

@@ -1,4 +1,24 @@
 .details-container{
+  .content{
+    overflow-x: hidden;
+    margin: 0;
+    .img-place-holder{
+      height: 750px;
+      overflow: hidden;
+      img{
+        margin: 0;
+        width: 100%;
+      }
+    }
+    .meta{
+      .avatar{
+        display: inline-block;
+      }
+    }
+    .view-more{
+      margin-bottom: 100px;
+    }
+  }
   .tab-bar{
     display: flex;
     align-items: center;

@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 //遮罩层大小
-.adm-mask{
+.adm-mask {
   top: 50% !important;
   left: 50% !important;
   width: 750px !important;
@@ -27,10 +27,14 @@ body {
   }
 }
 //toast提示样式
-.adm-toast-mask .adm-toast-main{
+.adm-toast-mask .adm-toast-main {
   top: 30% !important;
   width: 150px !important;
-  .adm-auto-center-content{
+  .adm-auto-center-content {
     text-align: center;
   }
+}
+
+.adm-safe-area {
+  --adm-safe-area-multiple: 2;
 }

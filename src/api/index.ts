@@ -24,11 +24,25 @@ export const getNewsInfoService = (id: string) =>
   request.get(BASE_API.NewsInfo, { params: { id } })
 export const getStoreExtraService = (id: string) =>
   request.get(BASE_API.StoreExtra, { params: { id } })
-export const loginService = (phone: string, code: string) =>
-  request.post(BASE_API.Login, { phone, code })
-export const getPhoneCodeService = (phone: string) =>
-  request.post(BASE_API.PhoneCode, { phone })
-
+export const loginService = (phone: string, code: string) => {
+  const data = new URLSearchParams()
+  data.append('phone', phone)
+  data.append('code', code)
+  return request.post(BASE_API.Login, data, {
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  })
+}
+export const getPhoneCodeService = (phone: string) => {
+  const data = new URLSearchParams()
+  data.append('phone', phone)
+  return request.post(BASE_API.PhoneCode, data, {
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  })
+}
 export const checkLoginService = () => request.get(Auth_API.CheckLogin)
 export const getUserInfoService = () => request.get(Auth_API.UserInfo)
 export const updateUserInfoService = (params: any) =>

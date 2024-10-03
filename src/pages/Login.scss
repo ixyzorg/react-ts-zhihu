@@ -1,0 +1,31 @@
+.login-container{
+  .adm-form{
+    .adm-form-item-label{
+      font-size: 28px;
+    }
+    .adm-input .adm-input-element{
+      font-size: 28px;
+    }
+    .adm-list-item-content-prefix{
+      width: 120px;
+      padding: 10px 0;
+    }
+    .adm-list-item-content-main{
+      padding: 10px 0;
+    }
+    .adm-list-item-content-extra {
+      button{
+        font-size: 24px;
+      }
+    }
+    .adm-form-footer{
+      text-align: center;
+      button{
+        display: inline-block;
+        font-size: 28px;
+        width: 60%;
+        padding: 7px 10px;
+      }
+    }
+  }
+}
